@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"working-with-errors/httpRequest"
+)
 
 func main() {
-	fmt.Printf("Hello error's treatment!")
+	fmt.Println("Hello error's treatment!")
+	fmt.Println("...........")
+	fmt.Println(httpRequest.GetRequest("http://google.com.br"))
 }
